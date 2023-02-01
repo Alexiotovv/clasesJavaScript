@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Clase de JavaScaript</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<style>
+</style>
+
+<body>
+    <!-- <div class="form">
+        <label for="">Ingrese su nombre</label>
+        <input type="text" class="form form-control" id="NombreMin" style="width: 300px;">
+
+        <br>
+        <label for="">Su nombre en Mayuscula es</label>
+        <input type="text" class="form form-control" id="NombreMay" style="width: 300px;">
+
+        <br>
+        <button class="btn btn-danger" id="btnConvertir">Convertir a Mayuscula </button>
+        <br>
+        <br>
+        <button class="btn btn-warning" id="btnListar">Listar </button>
+    </div> -->
+
+    <div class="form">
+
+    </div>
+
+</body>
+<script src="js/jquery.js"></script>
+
+<script>
+    //Redondear Math
+    numero=15.80;
+    numero_redondeado=Math.round(numero);
+    console.log(numero_redondeado);
+
+
+    //Hay dos clases tipado fuerte y el tipado dinamico
+    //Recordando Operadores
+    num1=10;
+    num2=2;
+    multiplicacion = num1 * num2;
+    division = num1/num2;
+    suma = num1 + num2;
+    resta = num1 - num2;
+
+    console.log('La multiplicacion de los 2 numeros es: '+ multiplicacion);
+    console.log('La division de los 2 numeros es: '+ division);
+    console.log('La suma de los 2 numeros es: '+ suma);
+    console.log('La resta de los 2 numeros es: '+ resta);
+
+
+    //funcion parseFloat viene de la definicion punto flotante
+    // numero='2.0'
+    // console.log(parseFloat(parseInt(numero)*3.14151617));
+
+    //funcion parseInt viene de la definicion de Integer
+    // edad1='20'
+    // edad2='31'
+    // console.log(parseInt(edad1)+parseInt(edad2));
+    
+    
+    //concatenar cadenas se usa el simbolo mas (+)
+    // nombres ='Juan';
+    // apellidos='Perez';
+    // nombre_completo = nombres + ' ' + apellidos;
+    
+    // console.log('Tu nombre completo es: '+ nombre_completo);
+
+    // Listas o Arrays
+    // $("#btnListar").on("click", function () {
+    //     Nombres = ["Alex Vasquez", "Avril Paredes", "Wellington Cahuaza", "Juan Perez", "Patito Amarillo"];
+    //     Edades = ["38", "17", "36", "15", "20"];
+
+    //     for (let index = 0; index < Nombres.length; index = index + 1) {
+    //         // const element = Nombres[index];
+    //         if (Edades[index] <= 20) {
+    //             console.log(Nombres[index]);
+    //         }
+
+    //     }
+
+    //     console.log(Nombres);
+    //     console.log(Edades);
+    //     console.log(Nombres[1]);
+    //     console.log(Edades[1]);
+    //     lista=["Alex Vasquez","Avril Paredes","Wellington Cahuaza"];
+    //     console.log(lista[0]);
+    //     console.log(lista);
+    // });
+
+
+    $("#NombreMin").on('keyup', function () {
+        var Aminuscula = ""
+        Aminuscula = $("#NombreMin").val();
+        $("#NombreMay").val(Aminuscula.toUpperCase());
+    });
+
+    $("#btnConvertir").on("click", function () {
+        // alert("La Variable Aminuscula funciona global llamada: " + Aminuscula);
+    });
+
+</script>
+
+</html>

@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <title>Practicando JavaScaript</title>
+</head>
+<body>
+    <style>
+        /* codigo css */
+    </style>
+
+    <div>
+        <!-- <h4>Calculadora</h4>
+        <label for="">Numero1</label>
+        <input type="number" class="form form-control" id="numero1" onkeyup="suma();">
+        <br>
+        <label for="">Numero2</label>
+        <input type="number" class="form form-control" id="numero2" onkeyup="suma();">
+        <br>
+        <label for="">Resultado</label>
+        <input type="number" class="form form-control" id="resultado">
+
+        <input type="text"> -->
+        <!-- <h4>Practicando JavaScript</h4>
+        <input type="text" id="texto" class="form form-control" onblur="perdifoco();"
+        style="width: 400px;">
+        <br>
+        <textarea id="Descripcion" cols="30" rows="10" placeholder="Escribe aqui" 
+        class="form form-control" style="width: 500px;" onkeyup="Mayusculas();">
+
+        </textarea>
+        <a href="" class="btn btn-warning" id="Boton" onclick="HacerClick();">
+            Enviar
+        </a> -->
+
+        <!-- <label for="">Lista de Materiales</label>
+        <select name="Nombres" id="Nombres" class="form form-select" style="width: 300px;">
+            <option value="">Seleccione</option>
+        </select> -->
+        <!-- <label for="">Mayuscula a Minuscula</label>
+        <br>
+        <label for="">Texto1</label>
+        <input type="text" class="form form-control" id="Texto1" name="Texto1" 
+        style="width: 300px;" onkeyup="convertiraMayuscula();">
+        <br>
+        <label for="">Texto2</label>
+        <input type="text" class="form form-control" id="Texto2" name="Texto2" 
+        style="width: 300px;"> -->
+        <label for="">Numero Mayor</label>
+        <br>
+        <label for="">Numero1</label>
+        <input type="number" class="form form-control" id="Numero1" 
+        style="width: 300px;" required>
+        <br>
+        <label for="">Numero2</label>
+        <input type="number" class="form form-control" id="Numero2" 
+        style="width: 300px;" required>
+        
+        <label for="">Numero3</label>
+        <input type="number" class="form form-control" id="Numero3" 
+        style="width: 300px;" required>
+        <br>
+        <button class="btn btn-danger" id="Calcular">
+            Encontrar al Mayor
+        </button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $("#Calcular").on("click",function () {
+            num1=parseInt($("#Numero1").val());
+            num2=parseInt($("#Numero2").val());
+            num3=parseInt($("#Numero3").val());
+            mayor=0;
+            if (num1>num2 && num1>num3) {
+                mayor=num1;
+            }
+
+            if (num2>num1 && num2>num3) {
+                mayor=num2;
+            }
+            if (num3>num1 && num3>num2) {
+                mayor=num3
+            }
+            
+            alert("El mayor es " + mayor);
+        })
+        //codigo javascript
+        
+        
+
+        // function convertiraMayuscula(){
+        //    textmayuscula=$("#Texto1").val().toUpperCase();
+        //     $("#Texto1").val(textmayuscula);
+        // }    
+        
+        
+        // lista = ['Martillo','Pala','Clavo','Nivel','Arena','Cemento','Ladrillo'];
+        //Indices   0   ,  1   ,   2    ,  3   ,  4   ,   5
+        
+        //agregar elemento a Select
+        // lista.forEach(element => {
+        //     $("#Nombres").append('<option value=' + element + ' >' + element + '</option>');
+        // });
+        
+        // lista.forEach(element => {
+        //     if (element=='Julio') {
+        //         console.log("Julio Encontrado");
+        //     }else{
+        //         console.log("No Encontrado");
+        //     }
+        // });
+
+
+        // for (let index = 0; index < lista.length; index++) {
+        //     const element = lista[index];
+        //     console.log(index + ' - ' + element);
+        // }
+
+        
+
+
+        
+        
+        // function suma(){
+        //     var resultado=0;
+        //     num1=document.getElementById("numero1").value;
+        //     num2=document.getElementById("numero2").value;
+        //     resultado=parseInt(num1) + parseInt(num2);
+        //     document.getElementById("resultado").value=resultado;
+
+        // }
+        // function Mayusculas(){
+        //     var texto="";
+
+        //     texto=document.getElementById("Descripcion").value;
+        //     alert(texto);
+        // }
+
+        // function perdifoco(){
+        //     alert("Perdiste el foco");
+        // }
+
+        // function HacerClick(){
+        //     alert("Hola acabas de clickar ene el botón");
+        // };
+
+    </script>
+
+</body>
+</html>
